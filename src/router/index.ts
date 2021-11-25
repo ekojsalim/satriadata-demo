@@ -7,37 +7,42 @@ import MNIST from '../components/models/MNIST.vue';
 import MobileNet from '../components/models/Mobilenet.vue';
 import SqueezeNet from '../components/models/Squeezenet.vue';
 import Yolo from '../components/models/Yolo.vue';
+import SatriaData from '../components/models/SatriaData.vue'
 
 Vue.use(Router);
 
 export default new Router({
-  mode: 'hash',
+  mode: "hash",
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '*',
-      name: 'home',
-      component: Home,
+      path: "*",
+      name: "satriadata",
+      component: SatriaData,
     },
     {
-      path: '/mobilenet',
+      path: "/mobilenet",
       component: MobileNet,
     },
     {
-      path: '/squeezenet',
+      path: "/squeezenet",
       component: SqueezeNet,
     },
     {
-      path: '/emotion_ferplus',
+      path: "/emotion_ferplus",
       component: Emotion,
     },
     {
-      path: '/yolo',
+      path: "/yolo",
       component: Yolo,
     },
     {
-      path: '/mnist',
+      path: "/mnist",
       component: MNIST,
-    }
+    },
+    {
+      path: "/satriadata",
+      component: SatriaData,
+    },
   ],
 });

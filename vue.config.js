@@ -8,7 +8,7 @@ module.exports = {
       }
     }
   },
-  publicPath: process.env.NODE_ENV === 'production' ? '/onnxruntime-web-demo/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/satriadata-demo/' : '/',
   outputDir: 'docs',
   configureWebpack: config => {
     if (process.env.NODE_ENV === 'production') {

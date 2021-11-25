@@ -5,9 +5,9 @@
         <main-menu :currentView="currentView"></main-menu>
       </v-navigation-drawer>
       <v-toolbar app dark flat color="primary">
-        <v-toolbar-side-icon
+        <!-- <v-toolbar-side-icon
           @click.stop="showNav = !showNav"
-        ></v-toolbar-side-icon>
+        ></v-toolbar-side-icon> -->
         <v-toolbar-title>{{ currentTitle }}</v-toolbar-title>
         <v-spacer></v-spacer>
       </v-toolbar>
@@ -73,7 +73,7 @@ export default class App extends Vue {
     if (title) {
       return title;
     } else {
-      return "ONNX Runtime Web";
+      return "SatriaData Web Demo";
     }
   }
   get currentDescription() {
