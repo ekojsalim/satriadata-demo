@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "node post-install.js",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target app",
+    "build": "vue-cli-service build --target app --skip-plugins @vue/cli-plugin-eslint",
     "electron": "electron .",
     "electron-packager": "electron-packager . ONNXRuntimeWeb-demo --win32 --ignore=\"/(src|types|public|node_modules)\""
   },

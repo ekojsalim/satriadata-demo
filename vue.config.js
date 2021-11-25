@@ -10,6 +10,10 @@ module.exports = {
   },
   publicPath: process.env.NODE_ENV === 'production' ? '/satriadata-demo/' : '/',
   outputDir: 'docs',
+  lintOnSave: false,
+  chainWebpack: config => {
+    config.plugins.delete('fork-ts-checker')
+  },
   configureWebpack: config => {
     if (process.env.NODE_ENV === 'production') {
       config.node = {

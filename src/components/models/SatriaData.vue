@@ -25,7 +25,7 @@ const SATRIADATA_IMAGE_URLS = [
   { text: "Pria 2", value: "https://i.ibb.co/tpb4rXY/p2.jpg" },
   {
     text: "Pria 3",
-    value: "https://i.ibb.co/LNGxPYT/p3.jpg",
+    value: "https://i.ibb.co/stb31nZ/p3.jpg",
   },
 
   {
